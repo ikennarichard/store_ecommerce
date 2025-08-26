@@ -19,7 +19,11 @@ export default function RootShell({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jost.className} antialiased`}>{children}</body>
+      <body
+        className={`${jost.className} antialiased grid min-h-screen grid-rows-[auto,1fr,auto]`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
