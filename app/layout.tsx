@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: "An e-commerce platform for Nike shoes",
 };
 
-export default function RootShell({
+export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
