@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "@/components/Card";
-import {getCurrentUser} from "@/lib/auth/actions";
+// import {getCurrentUser} from "@/lib/auth/actions";
 
 const products = [
   {
@@ -41,7 +41,7 @@ const products = [
 ];
 
 const Home = async () => {
-  const user = await getCurrentUser();
+  const user = {} //await getCurrentUser();
 
   console.log('USER:', user);
 
