@@ -50,7 +50,7 @@ export default function Navbar() {
             Search
           </button>
           <button className="text-body text-dark-900 transition-colors hover:text-dark-700">
-            My Cart (2)
+            My Cart (0)
           </button>
         </div>
 

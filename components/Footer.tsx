@@ -20,7 +20,7 @@ const columns = [
     ],
   },
   {
-    title: "Kids'",
+    title: "Kids",
     links: [
       "Infant & Toddler Shoes",
       "Kids' Shoes",
@@ -61,13 +61,17 @@ export default function Footer() {
 
           <div className="flex gap-4 md:col-span-2 md:justify-end">
             {[
-              { src: "/x.svg", alt: "X" },
-              { src: "/facebook.svg", alt: "Facebook" },
-              { src: "/instagram.svg", alt: "Instagram" },
+              {
+                src: "/x.svg",
+                alt: "X",
+                href: "https://twitter.com/ikennarichard_",
+              },
             ].map((s) => (
               <Link
+                target="_blank"
+                rel="noreferrer"
                 key={s.alt}
-                href="#"
+                href={s.href}
                 aria-label={s.alt}
                 className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-light-100"
               >
@@ -82,7 +86,7 @@ export default function Footer() {
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 py-4 text-light-400 sm:flex-row sm:px-6 lg:px-8">
           <div className="flex items-center gap-3 text-caption">
             <Image src="/globe.svg" alt="" width={16} height={16} />
-            <span>Croatia</span>
+            <span>Made By Ikenna Richard</span>
             <span>© 2025 Nike, Inc. All Rights Reserved</span>
           </div>
           <ul className="flex items-center gap-6 text-caption">
