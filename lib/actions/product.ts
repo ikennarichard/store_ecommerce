@@ -109,7 +109,7 @@ export async function getAllProducts(
   }
   if (hasPrice) {
     const priceBounds: SQL[] = [];
-    if (filters.priceRanges.length) {
+    if (filters?.priceRanges.length) {
       for (const [min, max] of filters.priceRanges) {
         const subConds: SQL[] = [];
         if (min !== undefined) {
