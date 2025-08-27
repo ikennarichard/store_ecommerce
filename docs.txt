@@ -1,0 +1,4 @@
+neon() is a client function from Neon, a serverless Postgres provider.
+
+npx drizzle-kit generate - generate migration file
+npx drizzle-kit push - generate table
